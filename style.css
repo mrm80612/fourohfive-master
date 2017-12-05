@@ -482,38 +482,37 @@ html {
 }
 
 .homebutton {
-  font-size: 1.5em;
-  font-style: regular;
+  font-size: 1.25em;
   text-align: center;
   text-shadow: 2px 1px gray;
 }
 
 .aboutbutton {
-  font-size: 1.5em;
+  font-size: 1.25em;
   text-align: center;
   text-shadow: 2px 1px gray;
 }
 
 .classesbutton {
-  font-size: 1.5em;
+  font-size: 1.25em;
   text-align: center;
   text-shadow: 2px 1px gray;
 }
 
 .schedulebutton {
-  font-size: 1.5em;
+  font-size: 1.25em;
   text-align: center;
   text-shadow: 2px 1px gray;
 }
 
 .pricingbutton {
-  font-size: 1.5em;
+  font-size: 1.25em;
   text-align: center;
   text-shadow: 2px 1px gray;
 }
 
 .contactbutton {
-  font-size: 1.5em;
+  font-size: 1.25em;
   text-align: center;
   text-shadow: 2px 1px gray;
 }
@@ -687,6 +686,31 @@ html {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+}
+
+.billboard {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.billboard__media {
+  display: block;
+  max-height: 90vh;
+  object-fit: cover;
+  width: 100vw;
+  max-width: 100%;
+  filter: grayscale(0.75);
+}
+
+.billboardvideo {
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  height: auto;
 }
 
 body {

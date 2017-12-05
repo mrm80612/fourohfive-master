@@ -24,14 +24,15 @@
 
 	<header id="masthead" class="masthead">
 
-		<?php
+
+
+		<nav id="global-nav" class="global-nav">
+				<?php
 
 		/* This theme supports custom logos — see functions.php — so we load the logo here. */
 		the_custom_logo();
 
 		 ?>
-
-		<nav id="global-nav" class="global-nav">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo 'Menu'; ?></button>
 			<?php
 				/**

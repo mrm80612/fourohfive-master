@@ -23,6 +23,30 @@ html {
     justify-content: center;
 }
 
+.billboard {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.billboard__media {
+  display: block;
+  max-height: 90vh;
+  object-fit: cover;
+  width: 100vw;
+  max-width: 100%;
+  filter: grayscale(.75);
+}
+
+.billboardvideo {
+    margin: 0 auto;
+    //padding: 0 $spacer-15x-x;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
 body {
   display: flex;
     flex-direction: column;
