@@ -1,0 +1,21 @@
+// Styles for images, videos, etc.
+
+// Make an image fluid so it states contained within a container.
+.img-fluid {
+    height: auto;
+    max-width: 100%;
+}
+
+.responsive-embed {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+}
+.responsive-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}

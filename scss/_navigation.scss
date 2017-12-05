@@ -1,0 +1,134 @@
+// Styles for Nav Menus
+
+.homebutton {
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 1px gray;
+}
+
+.aboutbutton {
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 1px gray;
+}
+
+.classesbutton {
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 1px gray;
+}
+
+.schedulebutton {
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 1px gray;
+}
+
+.pricingbutton {
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 1px gray;
+}
+
+.contactbutton {
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 1px gray;
+}
+
+.global-nav {
+    background: $black;
+    display: block;
+    width: 100%;
+}
+
+.global-nav ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.global-nav ul ul {
+    position: absolute;
+        top: 100%;
+        left: -999em;
+        z-index: 99999;
+}
+
+.global-nav ul ul ul {
+    top: 0;
+    left: -999em;
+}
+
+.global-nav ul ul li:hover > ul,
+.global-nav ul ul li.focus > ul {
+    left: 100%;
+}
+
+.global-nav ul ul a {
+    width: 200px;
+}
+
+.global-nav ul li:hover > ul,
+.global-nav ul li.focus > ul {
+    left: auto;
+}
+
+.global-nav a {
+    padding: $spacer-15x-y $spacer-x;
+}
+
+.global-nav a {
+    display: block;
+    font-weight: lighter;
+    text-decoration: none;
+    padding: $spacer-3x;
+}
+
+.global-nav a:link {
+    color: $white;
+}
+
+.global-nav a:hover {
+    color: $white;
+}
+
+.global-nav a:visited {
+    color: $white;
+}
+
+.global-nav a:active {
+    color: $gray;
+}
+
+/* Small menu. */
+.menu-toggle,
+.global-nav.toggled ul {
+    display: block;
+}
+
+@media screen and (min-width: 640px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .global-nav {
+        border-top: 1px solid $white;
+        border-bottom: 1px solid $white;
+        height: 96px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .global-nav ul {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .global-nav li {
+        margin-right: $spacer-x;
+    }
+}
