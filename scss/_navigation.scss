@@ -40,6 +40,9 @@
     background: $black;
     display: block;
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index:170;
 }
 
 .global-nav ul {
@@ -114,9 +117,9 @@
     }
 
     .global-nav {
-        border-top: 1px solid $white;
-        border-bottom: 1px solid $white;
-        height: 96px;
+        //border-top: 1px solid $white;
+        //border-bottom: 1px solid $white;
+        height: 100px;
         display: flex;
         justify-content: right;
         align-items: center;

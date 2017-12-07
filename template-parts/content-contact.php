@@ -3,8 +3,9 @@
 <div class="grid-1-4">
 	<div>
 		<h3>Address</h3>
-		<p>716 Traction Ave, </br> Los Angeles, CA 90013 </br> (213) 627-7374 </p>
+		<p>106A W. BURBANK BLVD. </br> BURBANK, CA 91502 </br> (213) 627-7374 </p>
 		
+
 		<p>Sunday:  2–7PM </br> 
 		Monday:  Closed </br> 
         Tuesday:  Closed </br> 

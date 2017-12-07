@@ -23,6 +23,23 @@ html {
     justify-content: center;
 }
 
+.largecontainer {
+    max-width: $largecontainer;
+    margin: 0 auto;
+    //padding: 25px 120px;;
+    display: flex;
+    justify-content: center;
+}
+
+.abouttext {
+    margin: 25px;
+}
+
+.hometext {
+    margin: 25px;
+    font-size: 1.25em;
+}
+
 .billboard {
   overflow: hidden;
   position: relative;
@@ -49,7 +66,7 @@ html {
 
 body {
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
   min-height: 100vh;
 }
 

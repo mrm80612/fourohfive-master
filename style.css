@@ -452,6 +452,11 @@ html {
   font-family: 'Orbitron', sans-serif;
 }
 
+p,
+h3 {
+  font-family: 'Asap', sans-serif;
+}
+
 .img-fluid {
   height: auto;
   max-width: 100%;
@@ -473,7 +478,7 @@ html {
 }
 
 .footer {
-  background: #2C2C2C;
+  background: #000;
   color: #ffffff;
   display: -ms-flexbox;
   display: flex;
@@ -518,9 +523,13 @@ html {
 }
 
 .global-nav {
-  background: #2C2C2C;
+  background: #000;
   display: block;
   width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 170;
 }
 
 .global-nav ul {
@@ -595,9 +604,7 @@ html {
   }
 
   .global-nav {
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
-    height: 96px;
+    height: 100px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: right;
@@ -688,6 +695,24 @@ html {
       justify-content: center;
 }
 
+.largecontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.abouttext {
+  margin: 25px;
+}
+
+.hometext {
+  margin: 25px;
+  font-size: 1.25em;
+}
+
 .billboard {
   overflow: hidden;
   position: relative;
@@ -747,6 +772,14 @@ main,
     display: grid;
     -ms-grid-columns: 1fr 3fr;
         grid-template-columns: 1fr 3fr;
+    grid-gap: 24px;
+  }
+
+  .grid-1-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-gap: 24px;
   }
 }

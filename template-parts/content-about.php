@@ -6,11 +6,11 @@
 
 <img src="<?php the_field('about_image');?>" alt="">
 
-<h3 style="margin-left:2em;">
+<div class="abouttext">
 	<?php
 		the_field('about');
 	?>
-</h3>
+</div>
 
 <?php
 	the_content();
