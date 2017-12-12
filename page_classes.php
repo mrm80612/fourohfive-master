@@ -1,6 +1,7 @@
 <?php
 /**
- * Template Name: Exhibitions
+ * Template Name: Classes
+ *
  * The template for displaying all pages
  *
  * This is the template that displays all pages by default.
@@ -14,13 +15,18 @@
 
 get_header(); ?>
 
-<main class="mt-3">
+<main>
 
 	<?php
 	while ( have_posts() ) : the_post();
 
 		/* Get content-page.php */
-		get_template_part( 'template-parts/content', 'exhibitions' );
+		get_template_part( 'template-parts/content', 'classes' );
+
+		/* If comments are open or we have at least one comment, load up the comment template. */
+		if ( comments_open() || get_comments_number() ) :
+			comments_template();
+		endif;
 
 	endwhile;
 	?>

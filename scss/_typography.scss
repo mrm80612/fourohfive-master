@@ -5,6 +5,24 @@ html {
 }
 
 p,
-h3 {
+h3,
+h2 {
 	font-family: 'Asap', sans-serif;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.list-prices li{
+	list-style: none;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	
+}
+
+.list-prices li:not(:first-child){
+	
+	border-top: 1px dotted #808080;
+	
 }

@@ -26,18 +26,20 @@ html {
 .largecontainer {
     max-width: $largecontainer;
     margin: 0 auto;
-    //padding: 25px 120px;;
+    padding: 25px 120px;;
     display: flex;
     justify-content: center;
 }
 
 .abouttext {
     margin: 25px;
+    color:#225374;
 }
 
 .hometext {
     margin: 25px;
     font-size: 1.25em;
+    color:#225374;
 }
 
 .billboard {
@@ -48,11 +50,11 @@ html {
 
 .billboard__media {
   display: block;
-  max-height: 90vh;
+  max-height: 80vh;
   object-fit: cover;
   width: 100vw;
   max-width: 100%;
-  filter: grayscale(.75);
+  // filter: grayscale(.75);
 }
 
 .billboardvideo {

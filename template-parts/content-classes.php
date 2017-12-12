@@ -8,7 +8,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('artists'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('classes'); ?>>
 	<?php
 		/**
 		 * Gets the featured image.
@@ -16,7 +16,7 @@
 		 */
 		the_post_thumbnail('full', ['class' => 'img-fluid']);
 	?>
-	<header>
+	<header class="text-center mt-3" style="color:#225374">
 		<?php the_title( '<h1>', '</h1>' ); ?>
 	</header>
 
@@ -27,21 +27,21 @@
 		 * depends on how you want to format things
 		 */
 	?>
-	<div class="grid d-flex justify-content-center">
+	<div class="largecontainer">
+	<div class="grid justify-content-center">
 		<?php
 
 			// check if the repeater field has rows of data
-			if( have_rows('artists') ):
+			if( have_rows('classes') ):
 
 			 	// loop through the rows of data
-			    while ( have_rows('artists') ) : the_row(); ?>
+			    while ( have_rows('classes') ) : the_row(); ?>
 					
 					<div class="grid-item">
-				        <img src="<?php the_sub_field('photo'); ?>" />
 				        
-				        <p>
-				        	<?php the_sub_field('name'); ?>
-				        </p>
+				        <h2 style="color:#225374">
+				        	<?php the_sub_field('title'); ?>
+				        </h2>
 				        <p>
 				        	<?php the_sub_field('description'); ?>
 				        </p>
@@ -55,5 +55,6 @@
 			endif;
 
 			?>
+	</div>
 	</div>
 </article>

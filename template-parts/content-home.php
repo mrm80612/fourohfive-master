@@ -12,7 +12,7 @@
 		</script></p>
 </div>
 
-<div class="largecontainer">
+<div class="container">
 
 	<div class="hometext">
 		<?php

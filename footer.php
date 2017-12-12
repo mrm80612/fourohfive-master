@@ -12,7 +12,8 @@
 
 
 			<footer class="footer">
-				<p>Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. All rights reserved. </p>
+				<p>Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. All rights reserved.  -  106A W. Burbank BLVD. Burbank, CA 91502  -  (213) 627-7374</p>
+				<!-- <img src="facebook.png" style="width:50px;height:50px;"> -->
 			</footer>
 
 		<?php wp_footer(); ?>

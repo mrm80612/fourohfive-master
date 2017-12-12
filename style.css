@@ -453,8 +453,23 @@ html {
 }
 
 p,
-h3 {
+h3,
+h2 {
   font-family: 'Asap', sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.list-prices li {
+  list-style: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.list-prices li:not(:first-child) {
+  border-top: 1px dotted #808080;
 }
 
 .img-fluid {
@@ -698,6 +713,7 @@ html {
 .largecontainer {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 25px 120px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -706,11 +722,13 @@ html {
 
 .abouttext {
   margin: 25px;
+  color: #225374;
 }
 
 .hometext {
   margin: 25px;
   font-size: 1.25em;
+  color: #225374;
 }
 
 .billboard {
@@ -721,11 +739,10 @@ html {
 
 .billboard__media {
   display: block;
-  max-height: 90vh;
+  max-height: 80vh;
   object-fit: cover;
   width: 100vw;
   max-width: 100%;
-  filter: grayscale(0.75);
 }
 
 .billboardvideo {
@@ -758,7 +775,35 @@ main,
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  -ms-grid-rows: 2;
+      grid-template-rows: 2;
   grid-gap: 24px;
+  margin: 25px;
+}
+
+.grid-1-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 25px 120px;
+  grid-gap: 24px;
+  max-width: 800px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.grid-1-1-1-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+  grid-gap: 20px;
+  height: 50%;
+  margin: 25px;
+  padding: 0;
 }
 
 @media screen and (min-width: 700px) {
